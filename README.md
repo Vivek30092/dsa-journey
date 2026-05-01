@@ -330,8 +330,8 @@ output.exe      # Windows
 
 | Resource | Link |
 |----------|------|
-| 🎓 Apna College DSA Series | [YouTube](https://www.youtube.com/@ApnaCollegeOfficial) |
-| 💻 LeetCode Practice | [leetcode.com](https://leetcode.com) |
+| 🎓 Apna College DSA Series | [YouTube](https://youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt&si=CMGeryvY4U49bSak) |
+| 💻 LeetCode Practice | [leetcode.com](https://leetcode.com/u/Vivek30_14/) |
 | 📖 C++ Reference | [cppreference.com](https://en.cppreference.com/) |
 
 ---
