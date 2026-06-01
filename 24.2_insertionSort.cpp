@@ -4,7 +4,7 @@ using namespace std;
 
 void insertionSort(int arr[], int n){           //O(n^2)
     for(int i = 1; i<n; i++){               //traverse unsorted array
-        int curr = arr[i];
+        int curr = arr[i];                  // store current element
         int prev = i-1;
 
         // while(prev >=0 && arr[prev] > curr){    //for ascending
