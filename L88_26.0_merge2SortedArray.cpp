@@ -1,5 +1,7 @@
 // problem 88. of leetCode
 // merge two sorted array into single array
+// space complexity : O(1)
+// time complexity : O(m+n)
 #include<iostream>
 #include<vector>
 using namespace std;
