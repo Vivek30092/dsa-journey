@@ -2,4 +2,10 @@
 // space complexity :
 // time complexity :
 
-// return lexicographically next array 
+// return lexicographically next array
+#include<iostream>
+using namespace std;
+int main(){
+    
+    return 0;
+}
