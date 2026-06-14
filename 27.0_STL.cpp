@@ -7,7 +7,10 @@
 */
 
 #include<iostream>
+#include<vector>
 using namespace std;
 int main(){
     // Vectors(containers)
+    vector<int> vec;
+    cout<<vec.size()<<endl;
 }
