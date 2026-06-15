@@ -32,7 +32,11 @@ imp:vector<int> vec(3,10)   size : 3 , values : 10(all)
     analyze(vec);
     // emplace_back
     vec.emplace_back(6);
-
+    vec.push_back(5);
+    vec.push_back(21);
+    vec.push_back(12);
+    vec.push_back(9);
+    
     // pop_back : remove element from last
     vec.pop_back();
 
@@ -43,7 +47,22 @@ imp:vector<int> vec(3,10)   size : 3 , values : 10(all)
     cout<<"Value at front: "<<vec.front()<<endl;
     cout<<"Value at back: "<<vec.back()<<endl;
 
+    // erase() TC:O(n), changes size BUT NOT capacity
+    vec.erase(vec.begin());
+    vec.erase(vec.begin() + 1);
+    // delete values in range
+    // vec.erase(start,end)         [start(included), end(excluded))
+    vec.erase(vec.begin()+1,vec.begin()+3);
 
+
+    // insert: values at middle(14 at index 2)
+    vec.insert(vec.begin()+2,14);       //insert(position, value)
+
+
+    // clear: clear values of vector, capacity REMAIN SAME
+    vec.clear();
+    analyze(vec);
+    cout<<"empty vec: "<<vec.empty()<<endl;     // 1: empty, 0: not empty
 
     // print ele of vec using for each loop
     cout<<"Values of vec: ";
