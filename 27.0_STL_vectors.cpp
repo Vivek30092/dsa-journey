@@ -26,7 +26,7 @@ imp:vector<int> vec(3,10)   size : 3 , values : 10(all)
     // push at back of vector
     vec.push_back(1);
     analyze(vec);
-    vec.push_back(2);
+    vec.push_back(22);
     analyze(vec);
     vec.push_back(3);
     analyze(vec);
@@ -54,15 +54,39 @@ imp:vector<int> vec(3,10)   size : 3 , values : 10(all)
     // vec.erase(start,end)         [start(included), end(excluded))
     vec.erase(vec.begin()+1,vec.begin()+3);
 
-
     // insert: values at middle(14 at index 2)
     vec.insert(vec.begin()+2,14);       //insert(position, value)
 
-
     // clear: clear values of vector, capacity REMAIN SAME
-    vec.clear();
+    // vec.clear();
     analyze(vec);
-    cout<<"empty vec: "<<vec.empty()<<endl;     // 1: empty, 0: not empty
+    // cout<<"empty vec: "<<vec.empty()<<endl;     // 1: empty, 0: not empty
+
+
+
+
+    // ITERATORS : to loop on vector
+    // vec.begin       //first value of array usign dereferencing operator(*)
+    cout<<"vec.begin(dereference(*)): "<<(*(vec.begin()))<<endl;
+    // vec.end          // last+1(garbage location)
+    cout<<"vec.end(dereference)(*)): "<<(*vec.end())<<endl;
+    // forward iterator
+    vector<int>::iterator itr;
+    for(itr = vec.begin(); itr!=vec.end(); itr++){
+        cout<<*(itr)<<endl;
+    }
+    // backward iterator
+    vector<int>::reverse_iterator it;           // :: = scope
+    // we can use "auto" at place of above line
+    // for( auto it = vec.rbegin(); it!=vec.rend(); it++){...}
+    // rbegin(): starts from 0-1 position of vector
+    // rend(): ends at n postion of vector
+    for(it = vec.rbegin(); it!=vec.rend(); it++){
+        cout<<*(it)<<endl;
+    } 
+
+
+
 
     // print ele of vec using for each loop
     cout<<"Values of vec: ";
