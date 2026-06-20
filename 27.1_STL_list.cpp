@@ -1,5 +1,7 @@
 // list (container)
 // internally implemented as doubly linked list
+// random access is possible
+
 #include<iostream>
 #include<list>
 using namespace std;
@@ -19,5 +21,7 @@ int main(){
         cout<< val <<" ";
     }
     cout<<endl;
+
+    // also support size, erase, clear, begin, end, rbegin, rend, insert, front, back
     return 0;
     }
