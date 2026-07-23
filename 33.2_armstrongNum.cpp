@@ -5,7 +5,7 @@ using namespace std;
 
 string isArmstrong(int number){
     int sum = 0;
-    int constNum = number;
+    int copyN = number;
     int power = (int)(log10(number)+1);
     while(number>0){
         int currDigit = number % 10;
@@ -13,8 +13,8 @@ string isArmstrong(int number){
         number /= 10;
         // cout<<currDigit<<'\t'<<sum<<endl;           //used for testing
     }
-    // cout<<sum<<'\t'<<constNum<<endl;            //used for testing code
-    if(sum==constNum)
+    // cout<<sum<<'\t'<<copyN<<endl;            //used for testing code
+    if(sum==copyN)
         return "Armstrong Number";
     else
         return "Not Armstrong Number";
