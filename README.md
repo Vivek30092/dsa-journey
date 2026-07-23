@@ -4,7 +4,7 @@
 
 [![Language](https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge&logo=cplusplus)](https://isocpp.org/)
 [![Course](https://img.shields.io/badge/Course-Apna%20College-orange?style=for-the-badge)](https://www.youtube.com/@ApnaCollegeOfficial)
-[![Files](https://img.shields.io/badge/Files-107%2B-green?style=for-the-badge)]()
+[![Files](https://img.shields.io/badge/Files-120%2B-green?style=for-the-badge)]()
 [![Status](https://img.shields.io/badge/Status-Active%20Learning-yellow?style=for-the-badge)]()
 
 > *"A journey of a thousand miles begins with a single step."*  
@@ -237,6 +237,33 @@ This repository is my personal DSA (Data Structures & Algorithms) practice log. 
 | `29.0_LC125_stringPalindrome.cpp` | LeetCode #125 — Valid Palindrome (two pointer O(n)) |
 | `29.1_LC1910_stringOccurrences.cpp` | LeetCode #1910 — Remove All Occurrences of a Substring |
 
+### 📌 Chapter 30 — String Permutation
+| File | Topic |
+|------|-------|
+| `30.0_LC567_stringPermutation.cpp` | LeetCode #567 — Permutation in String (sliding window) |
+
+### 📌 Chapter 31 — Reverse Words
+| File | Topic |
+|------|-------|
+| `31.0_LC151_reverseWords.cpp` | LeetCode #151 — Reverse Words in a String |
+
+### 📌 Chapter 32 — String Compression
+| File | Topic |
+|------|-------|
+| `32.0_LC443_stringCompression.cpp` | LeetCode #443 — String Compression |
+
+### 📌 Chapter 33 — Math Problems
+| File | Topic |
+|------|-------|
+| `33.0.0_LC204_primeNo.cpp` | LeetCode #204 — Count Primes (brute force, √N check) |
+| `33.0.1_LC204_primeNoOptimized.cpp` | LeetCode #204 — Count Primes (**Sieve of Eratosthenes** O(n log log n)) |
+| `33.1_countDigit.cpp` | Count digits in a number using `log10` |
+| `33.2_armstrongNum.cpp` | Armstrong Number check |
+| `33.3.0_GCD.cpp` | GCD / HCF — brute force O(min(a,b)) |
+| `33.3.1_OptimalGcdByEuclid.cpp` | GCD / HCF — **Euclid's Algorithm** O(log(min(a,b))) |
+| `33.4_lcm.cpp` | LCM using GCD formula |
+| `33.5_LC7_reverseNum.cpp` | LeetCode #7 — Reverse Integer (overflow-safe) |
+
 ---
 
 ### 📌 LeetCode Problems Solved
@@ -254,6 +281,11 @@ This repository is my personal DSA (Data Structures & Algorithms) practice log. 
 | #540 | Single Element in Sorted Array | `20.0_LC540_singleElement.cpp` | Binary Search O(log N) |
 | #852 | Peak Index in Mountain Array | `19.0_LC852_peakIndex.cpp` | Binary Search O(log N) |
 | #1910 | Remove All Occurrences of Substring | `29.1_LC1910_stringOccurrences.cpp` | String manipulation |
+| #7 | Reverse Integer | `33.5_LC7_reverseNum.cpp` | Math, overflow handling |
+| #151 | Reverse Words in a String | `31.0_LC151_reverseWords.cpp` | String manipulation |
+| #204 | Count Primes | `33.0.1_LC204_primeNoOptimized.cpp` | Sieve of Eratosthenes O(n log log n) |
+| #443 | String Compression | `32.0_LC443_stringCompression.cpp` | Two Pointer |
+| #567 | Permutation in String | `30.0_LC567_stringPermutation.cpp` | Sliding Window |
 
 ---
 
@@ -374,7 +406,7 @@ Two Pointers        ████████████████░░░░
 Kadane's Algo       ████████████████████ 100%
 Sorting             ████████████░░░░░░░░  60%
 STL                 ████████████████████ 100%
-Strings             ████████████████░░░░  80%
+Strings             ██████████████████░░  90%
 Recursion           ░░░░░░░░░░░░░░░░░░░░   0%
 Linked Lists        ░░░░░░░░░░░░░░░░░░░░   0%
 Stacks & Queues     ░░░░░░░░░░░░░░░░░░░░   0%
