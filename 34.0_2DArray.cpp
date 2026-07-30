@@ -1,5 +1,9 @@
 // 2D array, matrix
-// array_name[row][column]
+// array_name[row][column] 
+
+// 2D arrays in memory
+// 1. row major : data store in linear in row wise
+// 2. column major : data store in linear fashion in column way
 #include<iostream>
 using namespace std;
 int main(){
