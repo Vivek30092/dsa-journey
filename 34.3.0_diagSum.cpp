@@ -1,5 +1,6 @@
 /* return diagonal sum = (sum of primary + secondary diagonal)
 no. of rows = no. of cols
+TC: O(n^2)
 */ 
 #include<iostream>
 using namespace std;
