@@ -5,17 +5,16 @@ no. of rows = no. of cols
 using namespace std;
 
 int diagSum(int matrix[][4], int rows, int cols){
-    int sum, priDiag, SecDiag;
-    priDiag = 0;
-    SecDiag = 0;
+    int sum = 0;
     for(int i = 0; i<rows; i++){
         for(int j = 0; j<cols; j++){
-            if(i==j)
-                priDiag += matrix[i][j];
-            else(j==n-ip1)}
+            if(i==j){
+                sum+= matrix[i][j];
+            }else if (j == cols-i-1){
+                sum += matrix[i][j];
+            }
         }
     }
-    
     return sum;
 }
 int main(){
@@ -26,6 +25,6 @@ int main(){
         {14,15,16,17}};
     int rows = 4;
     int cols = 4;
-    cout<<diagSum(matrix, rows, cols);
+    cout<<diagSum(matrix, 4, 4);
     return 0;
 }
