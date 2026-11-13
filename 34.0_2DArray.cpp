@@ -3,7 +3,7 @@
 
 // 2D arrays in memory
 // 1. row major : data store in linear in row wise
-// 2. column major : data store in linear fashion in column way
+// 2. column major : data store in linear fashion in column wise
 #include<iostream>
 using namespace std;
 int main(){
@@ -11,6 +11,7 @@ int main(){
     int rows = 4;
     int cols = 3;
 
+    // Loops on 2D arrays
     for(int i = 0; i<rows; i++){
         for(int j = 0; j<cols; j++){
             cout<<matrix[i][j]<<'\t';

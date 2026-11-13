@@ -10,9 +10,7 @@ int maxSum(int matrix[][4], int rows, int cols) {
         for (int i = 0; i < rows; i++) {
             currentSum += matrix[i][j];
         }
-        if (currentSum > maxColSum) {
-            maxColSum = currentSum;
-        }
+        maxColSum = max(maxColSum, currentSum);
     }
     return maxColSum;
 }

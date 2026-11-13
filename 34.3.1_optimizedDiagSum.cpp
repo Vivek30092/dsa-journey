@@ -12,7 +12,7 @@ int diagSum(int matrix[][4], int rows, int cols){
     //pd = j = i
     //sd = j = n-i-1 (n: no. of rows/cols)
 
-    for(int i = 0; i<n; i++){
+    for(int i = 0; i<n; i++ ){
         sum += matrix[i][i];
 
         if(i != n-i-1){

@@ -2,7 +2,7 @@
 no. of rows = no. of cols
 TC: O(n^2)
 */ 
-#include<iostream>
+#include<iostream>  
 using namespace std;
 
 int diagSum(int matrix[][4], int rows, int cols){

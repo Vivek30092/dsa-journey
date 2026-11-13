@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std; 
 
-// we always need to mention columns number while initialinzing 2D array
+// we always need to mention columns number while initializing 2D array or passing to a function
 bool linearSearch(int mat[][3], int rows, int cols, int key){
     for(int i= 0; i<rows ;i++){
         for(int j = 0; j< cols; j++){
@@ -12,14 +12,14 @@ bool linearSearch(int mat[][3], int rows, int cols, int key){
         }
     }
     return false;
-
 }
+
 int main(){
     int matrix[4][3] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
     int rows = 4;
     int cols = 3;
 
-    cout<<linearSearch(matrix, rows, cols, 8)<<endl;
+    cout<<linearSearch(matrix, rows, cols, 189978)<<endl;
 
     return 0;
 }

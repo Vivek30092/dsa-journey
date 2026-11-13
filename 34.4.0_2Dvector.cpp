@@ -20,3 +20,6 @@ int main(){
     
     return 0;
 }
+
+
+// we can have dynamic size for vector and each row can have dynamic numbers of elements
