@@ -26,7 +26,7 @@ int main(){
     };
     int row = 3;
     int col = 4;
-    int key = 6673;
+    int key = 13;
     cout<<matSearch2D(mat,row,col,key)<<endl;
 
 
