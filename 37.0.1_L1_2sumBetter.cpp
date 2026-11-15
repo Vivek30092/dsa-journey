@@ -1,14 +1,14 @@
 // better approach to solve two sum proble
-// TC : O(nlogn)
+// TC : O(nlogn) [sort]
 #include<iostream>
 #include<vector>
-#include <algorithm>
+#include <algorithm>    
 using namespace std;
 
 vector<int> twoSum(vector<int> &nums, int target){
-    sort(nums.begin(),nums.end());
+    sort(nums.begin(),nums.end());      //O(NlogN)
     int st = 0, end = nums.size()-1;
-    while(st<end){
+    while(st<end){                      //O(N)
         int ans = nums[st] + nums[end];
         if(ans != target){
             if(ans>target){
