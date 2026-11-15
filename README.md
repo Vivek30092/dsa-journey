@@ -4,7 +4,7 @@
 
 [![Language](https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge&logo=cplusplus)](https://isocpp.org/)
 [![Course](https://img.shields.io/badge/Course-Apna%20College-orange?style=for-the-badge)](https://www.youtube.com/@ApnaCollegeOfficial)
-[![Files](https://img.shields.io/badge/Files-120%2B-green?style=for-the-badge)]()
+[![Files](https://img.shields.io/badge/Files-150%2B-green?style=for-the-badge)]()
 [![Status](https://img.shields.io/badge/Status-Active%20Learning-yellow?style=for-the-badge)]()
 
 > *"A journey of a thousand miles begins with a single step."*  
@@ -264,28 +264,81 @@ This repository is my personal DSA (Data Structures & Algorithms) practice log. 
 | `33.4_lcm.cpp` | LCM using GCD formula |
 | `33.5_LC7_reverseNum.cpp` | LeetCode #7 — Reverse Integer (overflow-safe) |
 
+### 📌 Chapter 34 — 2D Arrays & Matrices
+| File | Topic |
+|------|-------|
+| `34.0_2DArray.cpp` | 2D array basics — row/column traversal, row-major vs column-major memory layout |
+| `34.1.0_linearSearch2DArray.cpp` | Linear Search on 2D array — O(n×m) |
+| `34.1.1_linearSearch2DArrayHW_problem.cpp` | HW: Return `pair(row, col)` if key found, else `(-1,-1)` |
+| `34.2.0_maxRowSum.cpp` | Find the row with maximum sum |
+| `34.2.1_maxColSum.cpp` | Find the column with maximum sum |
+| `34.3.0_diagSum.cpp` | Diagonal sum of a matrix |
+| `34.3.1_optimizedDiagSum.cpp` | Diagonal sum — optimized single pass |
+| `34.4.0_2Dvector.cpp` | 2D vectors (dynamic 2D arrays using `vector<vector<int>>`) |
+
+### 📌 Chapter 35 — Binary Search on 2D Arrays (LeetCode)
+| File | Topic |
+|------|-------|
+| `35.0.0_LC74_2DarraySearch.cpp` | LeetCode #74 — Search a 2D Matrix (brute force, linear search O(n×m)) |
+| `35.0.1_LC74_2DarraySearchOptimized01.cpp` | LeetCode #74 — Search a 2D Matrix (**Binary Search on row + row** O(log M × log N)) |
+| `35.1.0_LC240_search2DMatrix02.cpp` | LeetCode #240 — Search a 2D Matrix II (**Top-right staircase search** O(N+M)) |
+
+### 📌 Chapter 36 — Spiral Matrix
+| File | Topic |
+|------|-------|
+| `36.0_LC54_spiralMatrix.cpp` | LeetCode #54 — Spiral Matrix (boundary shrink approach, handles odd-size corner cases) |
+
+### 📌 Chapter 37 — Hashing Problems
+| File | Topic |
+|------|-------|
+| `37.0.0_L1_2sumBruteF.cpp` | LeetCode #1 — Two Sum (brute force O(n²)) |
+| `37.0.1_L1_2sumBetter.cpp` | LeetCode #1 — Two Sum (better approach using hashing) |
+| `37.0.2_L1_2sumOptimized.cpp` | LeetCode #1 — Two Sum (optimized) |
+| `37.1.0_L2965_findMissingAndRepeatedValues.cpp` | LeetCode #2965 — Find Missing and Repeated Values (unordered_set + math O(n²)) |
+| `37.2.0_L287_findDuplicate.cpp` | LeetCode #287 — Find the Duplicate Number (hashing with unordered_set O(N), O(N) space) |
+| `37.2.1_L287_findDuplicateOptimized.cpp` | LeetCode #287 — Find Duplicate (**Floyd's slow-fast pointer** O(N), O(1) space) |
+
+### 📌 Chapter 38 — 3Sum Problem
+| File | Topic |
+|------|-------|
+| `38.0.0_LC15_3SumBruteForce.cpp` | LeetCode #15 — 3Sum (brute force O(n³ × log(unique triplets)), using `set`) |
+| `38.0.1_LC15_3SumBetter.cpp` | LeetCode #15 — 3Sum (hashing approach — WIP) |
+| `38.0.2_LC15_3SumOptimized.cpp` | LeetCode #15 — 3Sum (optimized — WIP) |
+
+### 📌 Chapter 54 — OOP (Object-Oriented Programming)
+| File | Topic |
+|------|-------|
+| `54.0.0_oops.cpp` | OOP basics — starter file (WIP) |
+
 ---
 
 ### 📌 LeetCode Problems Solved
 | LeetCode # | Problem | File | Approach |
 |------------|---------|------|----------|
+| #1 | Two Sum | `37.0.0_L1_2sumBruteF.cpp` | Brute Force O(n²) |
+| #7 | Reverse Integer | `33.5_LC7_reverseNum.cpp` | Math, overflow handling |
 | #11 | Container With Most Water | `14.0.1_containerProblem.cpp` | Two Pointer O(n) |
+| #15 | 3Sum | `38.0.0_LC15_3SumBruteForce.cpp` | Brute Force O(n³) |
 | #31 | Next Permutation | `26.1_LC31_nextPermutation.cpp` | In-place O(n) |
 | #33 | Search in Rotated Sorted Array | `18.0_LC33_rotatedSortedArray.cpp` | Binary Search O(log N) |
+| #54 | Spiral Matrix | `36.0_LC54_spiralMatrix.cpp` | Boundary Shrink O(n×m) |
 | #66 | Plus One | `00.0_LC66_plusOne.cpp` | Array manipulation |
+| #74 | Search a 2D Matrix | `35.0.1_LC74_2DarraySearchOptimized01.cpp` | Binary Search O(log M × log N) |
 | #75 | Sort Colors | `25.2_LC75_sortArray012.cpp` | Dutch National Flag O(n) |
 | #88 | Merge Sorted Array | `26.0_LC88_merge2SortedArray.cpp` | Two Pointer O(n) |
 | #125 | Valid Palindrome | `29.0_LC125_stringPalindrome.cpp` | Two Pointer O(n) |
 | #136 | Single Number | `09.2_singleNumber.cpp` | XOR Bit Trick O(n) |
-| #238 | Product of Array Except Self | `15.0.1_prodOfArray.cpp` | Prefix-Suffix O(n) |
-| #540 | Single Element in Sorted Array | `20.0_LC540_singleElement.cpp` | Binary Search O(log N) |
-| #852 | Peak Index in Mountain Array | `19.0_LC852_peakIndex.cpp` | Binary Search O(log N) |
-| #1910 | Remove All Occurrences of Substring | `29.1_LC1910_stringOccurrences.cpp` | String manipulation |
-| #7 | Reverse Integer | `33.5_LC7_reverseNum.cpp` | Math, overflow handling |
 | #151 | Reverse Words in a String | `31.0_LC151_reverseWords.cpp` | String manipulation |
 | #204 | Count Primes | `33.0.1_LC204_primeNoOptimized.cpp` | Sieve of Eratosthenes O(n log log n) |
+| #238 | Product of Array Except Self | `15.0.1_prodOfArray.cpp` | Prefix-Suffix O(n) |
+| #240 | Search a 2D Matrix II | `35.1.0_LC240_search2DMatrix02.cpp` | Staircase Search O(N+M) |
+| #287 | Find the Duplicate Number | `37.2.1_L287_findDuplicateOptimized.cpp` | Floyd's Slow-Fast Pointer O(N), O(1) |
 | #443 | String Compression | `32.0_LC443_stringCompression.cpp` | Two Pointer |
+| #540 | Single Element in Sorted Array | `20.0_LC540_singleElement.cpp` | Binary Search O(log N) |
 | #567 | Permutation in String | `30.0_LC567_stringPermutation.cpp` | Sliding Window |
+| #852 | Peak Index in Mountain Array | `19.0_LC852_peakIndex.cpp` | Binary Search O(log N) |
+| #1910 | Remove All Occurrences of Substring | `29.1_LC1910_stringOccurrences.cpp` | String manipulation |
+| #2965 | Find Missing and Repeated Values | `37.1.0_L2965_findMissingAndRepeatedValues.cpp` | unordered_set + math O(n²) |
 
 ---
 
