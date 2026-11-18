@@ -1,0 +1,29 @@
+Object Oriented Programming
+    OBJECTS : "entities" in the real world(eg: pen, table, book), they further have associated properties and methods
+    CLASS : "blueprint" of these entities
+
+ACCESS MODIFIERS
+    PRIVATE : (default value)data and methods accessible inside class
+    PUBLIC : data and methods accessible to everyone
+    PROTECTED : data & methods accessible inside class and to it's derived class
+
+CONSTRUCTOR: special invoked automatically at time of "object creation". used for initialization.
+    - same name as class
+    - constructor doesn't have return type
+    - only called once(automatically), at object creation
+    - memory allocation happens when constructor is called
+TYPES OF CONSTRUCTOR
+    1. non-parametrized constructor
+    2. parametrized constructor
+    3. copy constructor
+CONSTRUCTOR OVERLOADING(polymorphism)
+
+
+
+4 PILLARS OF OOPs
+    1. ENCAPSULATION : "wrapping up" of data and member function in a single unit called class(data hiding)
+        class = [data properties + member function]
+    2. ABSTRACTION :
+    3. INHERITANCE : 
+    4. POLYMORPHISM : 
+
