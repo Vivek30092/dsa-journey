@@ -21,19 +21,6 @@ private:
     double salary;      // data hiding
 
 public: 
-    // non-parameterized constructor
-    Teacher(){
-        cout<<"constructor called!!"<<endl;       //creating constructor
-        dept = "Computer Science";
-    }
-
-    // parameterized constructor
-    Teacher(string n, string d, string s, double sal){
-        name = n; 
-        dept = d;
-        subject = s;
-        salary = sal;
-    }
     // properties/ attributes
     string name;
     string dept;
@@ -64,15 +51,13 @@ public:
 int main(){
     // Teacher t1 OBJECT
     Teacher t1;     // constructor called
-    Teacher t2("vivek", "computer science", "c++", 90000);
-    // t1.name = "vivek";
-    // t1.subject = "Ai&ml";
-    // // t1.dept = "Computer Science";
-    // t1.setSalary(80000);
-    t2.getInfor();
+    t1.name = "vivek";
+    t1.subject = "Ai&ml";
+    // t1.dept = "Computer Science";
+    t1.setSalary(80000);
     
-    // cout<<t1.name<<endl;
-    // cout<<t1.getSalary()<<endl;
-    // cout<<t1.dept<<endl;
+    cout<<t1.name<<endl;
+    cout<<t1.getSalary()<<endl;
+    cout<<t1.dept<<endl;
     return 0;
 }
